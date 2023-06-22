@@ -16,6 +16,7 @@ const compressImage = async (req, res) => {
     let encodedData;
 
     // Check if the image is PNG
+    // Check if the image is PNG
     if (isPNG(rawData)) {
       // Convert PNG to JPEG by decoding and encoding
       const png = PNG.sync.read(rawData);
